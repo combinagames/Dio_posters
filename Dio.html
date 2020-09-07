@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es"/>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Dio play</title>
+		<meta http-equiv="x-ua-compatible" content="ie-edge"/>
+		<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,shrink-to-fit=no,maximum-scale=3,minimal-ui"/>
+		<meta name="description" content="A pintar"/>
+		<meta name="application-name" content="website"/>
+		<link rel="alternate" hreflang="es"/>
+		<link rel="icon" href="dio_logo.png"/>
+		<link rel="stylesheet" href="cuarto.css"/>
+	</head>
+
+	<body class="contenedor">
+
+		<header class="header-c">
+			<div class="header-logo">
+				<img src="dio_logo.png" alt="" class="logo-top"/>
+			</div>
+			<div class="header-menu">
+				<a class="a2" href="">
+				<div class="hm-1"><strong>Inicio</strong></div>
+			</a>
+			<a class="a2" href="">
+				<div class="hm-1"><strong>Posters</strong></div>
+			</a>
+			<a class="a2" href="">
+				<div class="hm-1"><strong>Actualizaciones</strong></div>
+				</a>
+			</div>
+			<div class="header-mham">
+				<img src="mham.png" alt="settings" class="menuham" id="btnMh" />
+			</div>
+		</header>
+		<main class="cnt">
+			<center>
+			<h1>Dio</h1>
+			<h3>Posters<h3>
+			<img src="MARVEL.png" width="300px" height="100px"/><img src="DC.png" width="100" height="100px"/><img src="CartoonNetwork.png" height="100px" width="200px"/><br>
+			<h9>Busca en nuestros posters para que los descargues y los modifiques a tu gusto después</h9><br><br><br>
+			<br><br><button id="inicia">Posters</button><br>
+		</center>
+		</main>
+
+		<footer class="fot">
+			<a class="a2">
+			<div class="f-version"><strong>1.0.0</strong></div>
+			</a>
+			<a class="a2">
+			<div class="footer-1"><strong>Privacidad</strong></div>
+			</a>
+			<a class="a2">
+			<div class="footer-2"><strong>Creadores</strong></div>
+		</a>
+		<a class="a2">
+			<div class="footer-3"><strong>tel.</strong></div>
+		</a>
+		</footer>
+
+		<script>
+		</script>
+
+		<!-- MENU HAMBURGUESA -->
+		<div id="divMenuham" class="menu-ham">
+			<div class="mh-item menuAccion a4" id="menSb0" >Inicio</div></a>
+			<div class="mh-item menuAccion a4" id="menSb2" >Posters</div></a>
+			<div class="mh-item menuAccion a4" id="menSb3">Actualizaciones</div></a>
+			<script src="tercero.js"></script>
+			<script>
+				var iniciar = document.getElementById("inicia");
+				iniciar.addEventListener("click", min, false);
+
+				function min(){
+					window.location.replace("file:///Users/miguelhernandez/Desktop/servidor_local/codigo/dio_posters.html");
+				}
+			</script>
+	</body>
+</html>

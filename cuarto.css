@@ -1,0 +1,360 @@
+img {
+    max-width:100%;
+    heigh:auto;
+}
+
+/* [GRILLA] */
+.contenedor {
+    font-family: optima;
+    display: grid;
+    place-items:stretch center;
+    min-height:100vh;
+    grid-template-columns:1fr;
+    grid-template-rows: 55px auto 25px;
+    background-color: #ffffff;
+    grid-template-areas:
+    "head"
+    "cont"
+    "back"
+    "foot"
+}
+.header-c {
+    display:grid;
+    grid-area: head;
+    background-color: #dfdfdf;
+    place-items:center center;
+    position:sticky;
+    width:100%;
+    top:0;
+    grid-template-columns:150px auto;
+    grid-template-areas:
+    "hlogo hmenu"
+}
+.header-logo {
+    grid-area:hlogo;
+    grid-template-columns:repeat(2 1fr)
+}
+.a2 {
+    text-decoration:none;
+    color: white;
+}
+.a2:hover{
+    color: #dfdfdf;
+}
+
+.a4{
+    text-decoration: none;
+    color:#000000;
+    background-color:#a8efff;
+}
+
+.a4:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: red;
+}
+
+.a {
+    text-decoration:none;
+    color: black;
+}
+.a:hover{
+    color: #4a87ff;
+}
+.header-menu {
+    display:grid;
+    color:white;
+    grid-area: hmenu;
+    font-size:1.50em;
+    width:100%;
+    place-items:center center;
+    grid-template-columns:repeat(4 1fr);
+    background-color: black;
+    grid-template-areas:
+    "hm1 hm2 hm3"
+}
+.h-m1 {
+    grid-area:hm1;
+}
+.h-m2 {
+    grid-area:hm2;
+}
+.h-m3 {
+    grid-area:hm3;
+}
+.header-mham {
+    grid-area:hmenuham;
+    display:none;
+}
+
+.cnt {
+    display: grid;
+    grid-area:cont;
+    place-items:stretch center;
+    min-height:100vh;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(3 1fr);
+    background-color: #ffffff;
+    grid-template-areas:
+    "c-tit"
+    "c-cont"
+    "c-fondo"
+}
+.cnt-titulo {
+    grid-area:c-tit;
+    background-color: #16b4cc;
+    color: white;
+}
+.cnt-contenido {
+    display: grid;
+    grid-area:c-cont;
+    place-items:stretch center;
+    grid-template-columns:repeat(3 1fr);
+    grid-template-rows: repeat(4 1fr);
+    grid-template-areas:
+    "c-11 c-21 c-31"
+    "c-12 c-22 c-32"
+    "c-13 c-23 c-33"
+    "c-14 c-24 c-34"
+    "c-15 c-25 c-35"
+}
+.cnt-c11 {
+    grid-area: c-11;
+}
+.cnt-c12 {
+    grid-area:c-12;
+}
+.cnt-c13 {
+    grid-area:c-13;
+}
+.cnt-c14 {
+    grid-area:c-14;
+}
+.cnt-c15 {
+    grid-area:c-15;
+}
+.cnt-c21 {
+    grid-area:c-21;
+}
+.cnt-c22 {
+    grid-area:c-22;
+}
+.cnt-c23 {
+    grid-area:c-23;
+}
+.cnt-c24 {
+    grid-area:c-24;
+}
+.cnt-c25 {
+    grid-area:c-25;
+}
+.cnt-c31 {
+    grid-area:c-31;
+}
+.cnt-c32 {
+    grid-area:c-32;
+}
+.cnt-c33 {
+    grid-area:c-33;
+}
+.cnt-c34 {
+    grid-area:c-34;
+}
+.cnt-c35 {
+    grid-area:c-35;
+}
+.cnt-fondo {
+    grid-area:c-fondo;
+
+}
+
+.celda{
+    border:5px solid blue;
+    color: black;
+    width: 100px;
+}
+.general{
+    background-color:#b5d0ff;
+    border:5px solid blue;
+    color:black;
+    width: 100px;
+}
+.general:hover{
+    color:#4a87ff;
+    border:5px solid blue;
+    background-color:#b5d0ff;
+}
+/*BOTON*/
+.boton{
+    background-color: red;
+    color: white;
+}
+.boton:hover{
+    background-color: #e0b5ff;
+    color: blue;
+}
+.boton3{
+    background-color: grey;
+    color:black;
+}
+.boton3:hover{
+    background-color: black;
+    color: white;
+}
+.boton4{
+    background-color: green;
+    color:#e4f9c1;
+}
+.boton4:hover{
+    background-color: #e4f9c1;
+    color: green;
+}
+.boton5{
+    background-color: red;
+    color:white;
+}
+.boton5:hover{
+    background-color:orange;
+    color:white;
+}
+.boton6{
+    background-color: white;
+    color:black;
+}
+.boton6:hover{
+    background-color:grey;
+    color:white;
+}
+/*/confiance/*/
+.div_of_confiance{
+    background-color: rgb(249, 245, 245);
+    border:10px solid black;
+    width: 800px;
+}
+.backofwhite{
+    border:10px #000000;
+    width: 100px;
+}
+
+/* // MENU HAMBURGUESA */
+.menu-ham {
+    width:0;
+    position:fixed;
+    z-index:6;
+    max-height:100%;
+    right:0;
+    top:45px;
+    margin:auto;
+    background-color: #a8efff;
+    color:#000000;
+    transition:0.5s;
+    border-radius:6% 0% 0% 6%;
+}
+.mh-item  {
+    padding:8px 16px 8px 28px;
+}
+.mh-item:hover {
+    background-color: blue;
+    color:white;
+}
+
+/*//FOOTER*/
+.fot {
+    display:grid;
+    grid-area:foot;
+    position:sticky;
+    bottom:0;
+    width:100%;
+    font-size:1em;
+    color:white;
+    background-color: black;
+    place-items:center center;
+    grid-template-columns: 150px repeat(3 1fr);
+    grid-template-areas:
+    "version f1 f2 f3 f4"
+}
+.f-version {
+    grid-area:version;
+}
+.footer-1 {
+    grid-area:f1;
+}
+.footer-2 {
+    grid-area:f2;
+}
+.footer-3 {
+    grid-area:f3;
+}
+
+/* [IMAGENES] */
+.logo-top {
+    width:40px;
+}
+
+/* [SETTINGS] */
+.settings {
+    display:grid;
+    grid-area:set;
+    position:sticky;
+    bottom:0;
+    width:50px;
+    font-size:1em;
+    color:purple;
+    background-color:blue;
+    place-items:center center;
+    grid-template-columns: 100px repeat(4 1fr);
+    grid-template-areas:
+    "inicia_sesion" "Chats" "Tel." "Team"
+}
+
+/* [TITULOS] */
+h1 {
+}
+
+
+/* [MEDIA QUERIES ] */
+@media (min-width:150px) and (max-width: 900px) {
+    .header-c {
+        grid-template-columns: 1.5fr 0.1fr;
+        grid-template-areas:
+        "hlogo hmenuham"
+    }
+    .header-menu {
+        display:none;
+    }
+    .header-mham {
+        display:block;
+    }
+    .fot {{{{{
+        grid-template-columns: 4fr;
+        background-color: purple;
+        grid-template-columns: 1.5fr 0.1fr;
+        grid-template-areas:
+        "f1"
+        "f2"
+        "f3"
+        "f4"
+        "version"
+     }
+    .f-version {
+        color:white;
+        background-color: purple;
+        grid-template-columns: 1fr;
+     }}
+        .footer-2 {
+            color:white;
+            background-color: purple;
+            grid-template-columns: 1fr;
+    }}
+    .footer-1 {
+        color:white;
+        background-color: purple;
+        grid-template-columns: 1fr;
+    }}
+    .footer-3 {
+        color:white;
+        background-color: purple;
+        grid-template-columns: 1fr;
+    }}
+ }
+}
